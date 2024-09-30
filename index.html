@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Store</title>
+    <link rel="stylesheet" href="api.css">
+    <script src="https://kit.fontawesome.com/926b7a6ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="flex-header">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/initial-letter-logo-design-template-2024-20f1d82c3aa705f31cffa874b0131aa0_screen.jpg?ts=1709233242" alt="Logo" style="width:100px;height:100px;">
+            <div id="navbar">
+                <a href="#" class="filter" data-category="all"  onclick="showSlider()"><i class="fas fa-home"></i>&thinsp;Home</a>
+                <a href="#" class="filter" data-category="women" onclick="hideSlider()"><i class="fa fa-female"></i>&thinsp;Women</a>
+                <a href="#" class="filter" data-category="men" onclick="hideSlider()"><i class="fa fa-male"></i>&thinsp;Men</a>
+                <a href="#" class="filter" data-category="accessories" onclick="hideSlider()"><i class="fa fa-skyatlas"></i>&thinsp;Accessories</a>
+                <a href="#" class="filter" data-category="electronics" onclick="hideSlider()"><i class="fa fa-desktop"></i>&thinsp;Electronics</a>
+            </div>
+        <div class="header-right">
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fa fa-search"></i></button>
+            </div>
+            <div id="cart">
+                <a href="#" id="cart-link"><i class="fa fa-shopping-cart"></i>&thinsp;Cart: <span id="cart-count">0</span> items</a>
+            </div>
+        </div>
+    </section>
+    </header>
+
+    <section class="cover" id="slider-section">
+        <center>
+            <img src="https://img.freepik.com/premium-psd/banner-template-online-fashion-sale_23-2148585403.jpg?semt=ais_hybrid" alt="Cover Image" class="cover-image" style="width:100%;height:44%;">        </center>    </section>
+
+    <main>
+        <h2>Products</h2>
+        <div id="products" class="products-grid"></div> 
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
+            <p>Contact us: support@ecommerce.com</p>
+        </div>
+    </footer>
+
+    <script src="api.js"></script>
+</body>
+</html>
